@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Portfolio — Data &amp; Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="nav-initials">MS</span>
+      <span class="nav-name">Malwina Sawczuk</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#courses" data-i18n="nav.courses">Courses</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn" aria-label="Switch language">
+        <span class="lang-flag" id="langFlag">&#127477;&#127473;</span>
+        <span class="lang-label" id="langLabel">PL</span>
+      </button>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about"    class="mobile-link" data-i18n="nav.about">About</a></li>
+      <li><a href="#projects" class="mobile-link" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#courses"  class="mobile-link" data-i18n="nav.courses">Courses</a></li>
+      <li><a href="#contact"  class="mobile-link" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">PORTFOLIO</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">Junior Data Analyst</p>
+      <h1 class="hero-title reveal">
+        <span data-i18n="hero.title1">Turning raw data</span><br>
+        <em data-i18n="hero.title2">into clarity</em>
+      </h1>
+      <p class="hero-desc reveal" data-i18n="hero.desc">
+        I build dashboards, reports, and digital experiences that make complex information feel effortless.
+      </p>
+      <a href="#projects" class="hero-cta reveal"><span data-i18n="hero.cta">View Work</span> <span>&#8595;</span></a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span class="scroll-line"></span>
+      <span class="scroll-label" data-i18n="hero.scroll">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title reveal" data-i18n="nav.about">About</h2>
+      </div>
+      <div class="about-grid">
+
+        <div class="about-photo-col reveal">
+          <div class="photo-frame">
+            <div class="photo-inner">
+              <img src="assets/photo.jpg" alt="Your Name" class="profile-photo" id="profilePhoto"
+                onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='flex';" />
+              <div class="photo-fallback" id="photoFallback">
+                <svg viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="30" r="18" fill="currentColor" opacity="0.15"/>
+                  <path d="M10 80 C10 58 70 58 70 80" stroke="currentColor" stroke-width="2" fill="none" opacity="0.2"/>
+                  <circle cx="40" cy="30" r="14" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.4"/>
+                </svg>
+                <span data-i18n="about.photoHint">Add your photo to assets/photo.jpg</span>
+              </div>
+            </div>
+            <div class="photo-accent-border"></div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="about-text reveal">
+            <p class="about-lead" data-i18n="about.lead">I'm a data professional who bridges the gap between raw numbers and meaningful stories.</p>
+            <p data-i18n="about.body">With expertise spanning Power BI, web development, and data engineering, I craft solutions that are as beautiful as they are functional.</p>
+          </div>
+          <div class="about-skills reveal">
+            <div class="skill-group">
+              <h4 data-i18n="about.skills.analytics">Analytics</h4>
+              <ul><li>Power BI</li><li>Tableau</li><li>Excel / DAX</li><li>SQL</li></ul>
+            </div>
+            <div class="skill-group">
+              <h4 data-i18n="about.skills.development">Development</h4>
+              <ul><li>Python</li><li>R</li><li>JavaScript</li><li>HTML / CSS</li></ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title reveal" data-i18n="nav.projects">Projects</h2>
+      </div>
+
+      <!-- Single-column project list -->
+      <div class="projects-list" id="projectsGrid">
+
+        <!-- Project 1 — Competitor Analysis -->
+        <article class="project-card reveal project-card--featured" data-category="powerbi">
+          <div class="card-media">
+            <div class="card-slideshow" data-slides="2">
+              <img src="assets/competitor_p1.jpg" alt="Competitor Sales Analysis" class="slide active" loading="lazy" />
+              <img src="assets/competitor_p2.jpg" alt="Advanced Insights" class="slide" loading="lazy" />
+              <button class="slide-prev" aria-label="Previous">&#8249;</button>
+              <button class="slide-next" aria-label="Next">&#8250;</button>
+              <div class="slide-dots"><span class="dot active"></span><span class="dot"></span></div>
+            </div>
+            <span class="card-badge">Power BI</span>
+            <div class="card-overlay">
+              <button class="card-btn" data-modal="competitor" data-i18n="card.viewReport">View Report</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag" data-i18n="p7.tag">Power BI &middot; 2 Pages &middot; DataCamp</span>
+            <h3 class="card-title" data-i18n="p7.title">Competitor Sales &amp; Market Share Analysis</h3>
+            <div class="card-kpis">
+              <div class="kpi"><span class="kpi-val">$71.2M</span><span class="kpi-label" data-i18n="kpi.revenue">Total Revenue</span></div>
+              <div class="kpi"><span class="kpi-val">+65.2%</span><span class="kpi-label" data-i18n="kpi.yoy">YoY Growth</span></div>
+              <div class="kpi"><span class="kpi-val">19.6%</span><span class="kpi-label" data-i18n="kpi.share">Market Share</span></div>
+            </div>
+            <p class="card-desc" data-i18n="p7.desc">Competitive intelligence report covering 6 countries (2017&ndash;2021). Urban segment drives 79% of revenue. AI-powered Key Influencers visual identifies products and manufacturers driving growth.</p>
+
+            <div class="card-details" id="details-competitor">
+              <div class="detail-block">
+                <h5 data-i18n="detail.overview">Overview</h5>
+                <p data-i18n="p7.overview">Built on DataCamp CSV &amp; Excel datasets. Power Query used to clean multi-year sales data, standardise country/category fields and build a scalable star-schema model across revenue, product, segment and time dimensions.</p>
+              </div>
+              <div class="detail-block">
+                <h5 data-i18n="detail.dax">DAX Measures</h5>
+                <ul>
+                  <li data-i18n="p7.dax1">Total Revenue &amp; PY Sales</li>
+                  <li data-i18n="p7.dax2">% YoY Growth</li>
+                  <li data-i18n="p7.dax3">Market Share %</li>
+                  <li data-i18n="p7.dax4">Revenue by Country &amp; Segment</li>
+                  <li data-i18n="p7.dax5">MoM &amp; Quarterly Growth Trends</li>
+                  <li data-i18n="p7.dax6">Units Sold &amp; Revenue Contribution %</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h5 data-i18n="detail.insights">Key Insights</h5>
+                <ul>
+                  <li data-i18n="p7.ins1">USA dominates at $51M revenue; Japan second at $11M</li>
+                  <li data-i18n="p7.ins2">Urban segment: 79.3% of total revenue</li>
+                  <li data-i18n="p7.ins3">Youth segment: highest growth at +86.8% YoY</li>
+                  <li data-i18n="p7.ins4">Strong quarterly expansion from 2019 to 2021</li>
+                  <li data-i18n="p7.ins5">AI Key Influencers: Artisans manufacturer drove the largest single revenue increase</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h5 data-i18n="detail.skills">Skills Demonstrated</h5>
+                <div class="detail-tags">
+                  <span>Power Query</span><span>DAX Time Intelligence</span><span>Market Share Analysis</span>
+                  <span>Competitive Benchmarking</span><span>Multi-level Segmentation</span>
+                  <span>Trend Analysis (MoM / QoQ / YoY)</span><span>AI Visuals</span><span>Executive Dashboard Design</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="card-expand-btn" data-target="details-competitor">
+              <span class="expand-label" data-i18n="card.showDetails">Show details</span>
+              <span class="expand-icon">+</span>
+            </button>
+
+            <div class="card-pages">
+              <span class="card-page-chip" data-i18n="p7.page1">Competitor Sales Analysis</span>
+              <span class="card-page-chip" data-i18n="p7.page2">Advanced Insights</span>
+            </div>
+            <div class="card-meta">
+              <span>Power BI</span><span>DAX</span><span>Waterfall</span><span>Key Influencers AI</span><span>Star Schema</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 — E-Commerce Analysis -->
+        <article class="project-card reveal project-card--featured" data-category="powerbi">
+          <div class="card-media">
+            <div class="card-slideshow" data-slides="3">
+              <img src="assets/ecommerce_p1.jpg" alt="E-Commerce Executive Summary" class="slide active" loading="lazy" />
+              <img src="assets/ecommerce_p2.jpg" alt="Shipping Metrics" class="slide" loading="lazy" />
+              <img src="assets/ecommerce_p3.jpg" alt="Market Basket" class="slide" loading="lazy" />
+              <button class="slide-prev" aria-label="Previous">&#8249;</button>
+              <button class="slide-next" aria-label="Next">&#8250;</button>
+              <div class="slide-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            </div>
+            <span class="card-badge">Power BI</span>
+            <div class="card-overlay">
+              <button class="card-btn" data-modal="ecommerce" data-i18n="card.viewReport">View Report</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag" data-i18n="p8.tag">Power BI &middot; 7 Pages &middot; DataCamp</span>
+            <h3 class="card-title" data-i18n="p8.title">E-Commerce Sales &amp; Shipping Optimization</h3>
+            <div class="card-kpis">
+              <div class="kpi"><span class="kpi-val">$1.55M</span><span class="kpi-label" data-i18n="kpi.sales">Total Sales</span></div>
+              <div class="kpi"><span class="kpi-val">27.5%</span><span class="kpi-label" data-i18n="kpi.margin">Profit Margin</span></div>
+              <div class="kpi"><span class="kpi-val">$118K</span><span class="kpi-label" data-i18n="kpi.saved">Shipping Saved</span></div>
+            </div>
+            <p class="card-desc" data-i18n="p8.desc">End-to-end e-commerce BI report for a US pet supplies store. Covers sales profitability, customer geography, product performance, shipping what-if simulation and market basket analysis.</p>
+
+            <div class="card-details" id="details-ecommerce">
+              <div class="detail-block">
+                <h5 data-i18n="detail.overview">Overview</h5>
+                <p data-i18n="p8.overview">DataCamp case study using CSV, XLSX and folder data sources. Power Query built a star-schema model joining sales, products, shipping and customer tables. Dynamic filtering across categories, regions, states and products.</p>
+              </div>
+              <div class="detail-block">
+                <h5 data-i18n="detail.dax">DAX Measures</h5>
+                <ul>
+                  <li data-i18n="p8.dax1">Total Sales, Total Profit &amp; Profit %</li>
+                  <li data-i18n="p8.dax2">Shipping Cost &mdash; Baseline vs What-if scenario</li>
+                  <li data-i18n="p8.dax3">Running totals &amp; YoY comparisons</li>
+                  <li data-i18n="p8.dax4">Customer Lifetime Value (LTV)</li>
+                  <li data-i18n="p8.dax5">Sales contribution % &amp; Market Basket metrics</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h5 data-i18n="detail.insights">Key Insights</h5>
+                <ul>
+                  <li data-i18n="p8.ins1">Electronics: highest margin at 44.28%</li>
+                  <li data-i18n="p8.ins2">Top revenue categories: Food ($536K), Disposables ($433K), Pet Food</li>
+                  <li data-i18n="p8.ins3">CA, NY, FL lead in sales volume; ND leads in Customer LTV ($1,278)</li>
+                  <li data-i18n="p8.ins4">Shipping what-if: baseline $385K optimised to $267K &mdash; $118K saved</li>
+                  <li data-i18n="p8.ins5">Market basket: Dog &amp; Puppy Pads + Earth Rated Bags are top co-purchase pair</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h5 data-i18n="detail.skills">Skills Demonstrated</h5>
+                <div class="detail-tags">
+                  <span>Power Query</span><span>Star Schema</span><span>Advanced DAX</span>
+                  <span>What-if Parameters</span><span>Time Intelligence</span><span>Running Totals</span>
+                  <span>Azure Maps</span><span>Market Basket Analysis</span>
+                  <span>KPI Dashboard Design</span><span>Scenario Simulation</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="card-expand-btn" data-target="details-ecommerce">
+              <span class="expand-label" data-i18n="card.showDetails">Show details</span>
+              <span class="expand-icon">+</span>
+            </button>
+
+            <div class="card-pages">
+              <span class="card-page-chip" data-i18n="p8.page1">Executive Summary</span>
+              <span class="card-page-chip" data-i18n="p8.page2">Customer Info</span>
+              <span class="card-page-chip" data-i18n="p8.page3">Product Info</span>
+              <span class="card-page-chip" data-i18n="p8.page4">Shipping Metrics</span>
+              <span class="card-page-chip" data-i18n="p8.page5">Market Basket</span>
+              <span class="card-page-chip" data-i18n="p8.page6">+2 more</span>
+            </div>
+            <div class="card-meta">
+              <span>Power BI</span><span>Azure Maps</span><span>What-if</span><span>Market Basket</span><span>Star Schema</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="courses section" id="courses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title reveal" data-i18n="nav.courses">Courses</h2>
+      </div>
+      <div class="courses-grid reveal">
+
+        <div class="course-card">
+          <div class="course-icon">&#127891;</div>
+          <div class="course-body">
+            <span class="course-provider">DataCamp</span>
+            <h4 class="course-title">Introduction to DAX in Power BI</h4>
+            <p class="course-desc"> I completed a comprehensive DAX course focused on building strong fundamentals in Power BI. Throughout the course, I worked with DAX functions to create calculated columns, measures, and calculated tables, while developing a clear understanding of row context vs. filter context. I also practiced using VAR variables, iterator functions, and CALCULATE() to create dynamic and optimized measures. Additionally, I explored Date & Time and Time Intelligence functions and learned how to leverage Quick Measures to build more advanced DAX solutions efficiently. make the end in simplier language</p>
+            <div class="course-tags"><span>Power BI</span><span>DAX</span><span>Data Manipulation</span></div>
+          </div>
+          <span class="course-badge course-badge--done">Completed</span>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">&#127891;</div>
+          <div class="course-body">
+            <span class="course-provider">DataCamp</span>
+            <h4 class="course-title">Introduction to Excel</h4>
+            <p class="course-desc">I completed a detailed Excel course that taught me how to handle and analyze data efficiently.
+
+During the course, I learned how to navigate Excel, add and organize data in workbooks, create basic formulas, and work with tables using structured references. I also practiced sorting, filtering, and formatting data to improve clarity and usability.
+
+I gained experience managing data with named ranges, custom number formats, and data validation, as well as applying aggregate functions like SUM, COUNT, and AVERAGE, and summarizing data with subtotals, totals, and conditional formatting.
+
+Lastly, I explored various Excel functions, including Text, Date & Time, and Math & Trig, and learned how to create visualizations to effectively display categories, proportions, and trends.</p>
+            <div class="course-tags"><span>Excel</span><span>Data Manipulation</span><span>Visualization</span></div>
+          </div>
+          <span class="course-badge course-badge--done">Completed</span>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">&#127891;</div>
+          <div class="course-body">
+            <span class="course-provider">DataCamp</span>
+            <h4 class="course-title">Raports in Power Bi</h4>
+            <p class="course-desc">Relational databases, advanced querying, window functions and performance tuning.</p>
+            <div class="course-tags"><span>SQL</span><span>PostgreSQL</span><span>Window Functions</span></div>
+          </div>
+          <span class="course-badge course-badge--done">Completed</span>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">&#127891;</div>
+          <div class="course-body">
+            <span class="course-provider">DataCamp</span>
+            <h4 class="course-title">Introduction to R</h4>
+            <p class="course-desc">Fundamentals of R for data analysis, visualization with ggplot2 and statistical computing.</p>
+            <div class="course-tags"><span>R</span><span>ggplot2</span><span>tidyverse</span></div>
+          </div>
+          <span class="course-badge course-badge--done">Completed</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT — links only, no form -->
+
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title reveal" data-i18n="nav.contact">Contact</h2>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-simple reveal">
+          <p class="contact-lead">
+            <span data-i18n="contact.lead1">Have a project in mind?</span><br>
+            <em data-i18n="contact.lead2">Let's talk.</em>
+          </p>
+          <div class="contact-links">
+            <a  class="contact-link">
+              <span class="cl-icon">&#9993;</span><span class="__cf_email__" data-cfemail="3d55585151527d4452484f535c5058135e5250">malwinasawczuk@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/malwina-sawczuk" target="_blank" class="contact-link" rel="noopener">
+              <span class="cl-icon">in</span>LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div class="cf-field">
+              <label class="cf-label" for="cfName" data-i18n="contact.name">Name</label>
+              <input class="cf-input" type="text" id="cfName" placeholder="Your name" required />
+            </div>
+            <div class="cf-field">
+              <label class="cf-label" for="cfEmail" data-i18n="contact.email">Email</label>
+              <input class="cf-input" type="email" id="cfEmail" placeholder="youremail@email.com" required />
+            </div>
+            <div class="cf-field">
+              <label class="cf-label" for="cfMessage" data-i18n="contact.message">Message</label>
+              <textarea class="cf-input cf-textarea" id="cfMessage" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="cf-submit">
+              <span data-i18n="contact.send">Send Message</span>
+              <span class="cf-arrow">&#8594;</span>
+            </button>
+            <p class="cf-success" id="cfSuccess" data-i18n="contact.success">Message sent! I'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name">Malwina Sawczuk &copy; 2026</span>
+        <span class="footer-tagline" data-i18n="footer.tagline">Designed &amp; built with care</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- REPORT MODAL -->
+  <div class="report-modal" id="reportModal" role="dialog" aria-modal="true" aria-label="Report viewer">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-window">
+      <div class="modal-bar">
+        <div class="modal-bar-dots">
+          <span class="mbd mbd--close" id="modalClose" title="Close"></span>
+          <span class="mbd mbd--min"></span>
+          <span class="mbd mbd--max"></span>
+        </div>
+        <div class="modal-bar-url" id="modalUrl">assets/report.pdf</div>
+        <div class="modal-bar-actions">
+          <span class="modal-page-info" id="modalPageInfo"></span>
+          <a class="modal-download" id="modalDownload" download title="Download PDF">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 2v8M4 7l4 4 4-4M2 13h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span data-i18n="modal.download">Download</span>
+          </a>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-loading" id="modalLoading">
+          <div class="modal-spinner"></div>
+          <span data-i18n="modal.loading">Loading report&hellip;</span>
+        </div>
+        <embed id="reportEmbed" class="report-embed" type="application/pdf" />
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
