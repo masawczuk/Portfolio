@@ -31,7 +31,7 @@
         <span></span><span></span>
       </button>
     </div>
-  </nav> 
+  </nav>
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
@@ -75,7 +75,7 @@
         <div class="about-photo-col reveal">
           <div class="photo-frame">
             <div class="photo-inner">
-              <img src="assets/photo.jpg" alt="Your Name" class="profile-photo" id="profilePhoto"
+              <img src="assets/photo.jpg" alt="Malwina Sawczuk" class="profile-photo" id="profilePhoto"
                 onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='flex';" />
               <div class="photo-fallback" id="photoFallback">
                 <svg viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,8 +92,8 @@
 
         <div class="about-right">
           <div class="about-text reveal">
-            <p class="about-lead" data-i18n="about.lead">I'm a data professional who bridges the gap between raw numbers and meaningful stories.</p>
-            <p data-i18n="about.body">With expertise spanning Power BI, web development, and data engineering, I craft solutions that are as beautiful as they are functional.</p>
+            <p class="about-lead" data-i18n="about.lead">I'm a Data Engineering and Analysis student with hands-on experience working with large datasets.</p>
+            <p data-i18n="about.body">I have strong analytical skills and a solid command of data visualization tools — I enjoy turning complex data into clear, actionable insights. Outside of coursework, I stay active in the data community: I competed at the <strong>HACKNATION</strong> hackathon and regularly attend conferences like <strong>KAIAK</strong> and <strong>GHOST</strong>, where I keep up with the latest trends and connect with people who share the same passion for data.</p>
           </div>
           <div class="about-skills reveal">
             <div class="skill-group">
@@ -119,7 +119,6 @@
         <h2 class="section-title reveal" data-i18n="nav.projects">Projects</h2>
       </div>
 
-      <!-- Single-column project list -->
       <div class="projects-list" id="projectsGrid">
 
         <!-- Project 1 — Competitor Analysis -->
@@ -145,7 +144,7 @@
               <div class="kpi"><span class="kpi-val">+65.2%</span><span class="kpi-label" data-i18n="kpi.yoy">YoY Growth</span></div>
               <div class="kpi"><span class="kpi-val">19.6%</span><span class="kpi-label" data-i18n="kpi.share">Market Share</span></div>
             </div>
-            <p class="card-desc" data-i18n="p7.desc">Competitive intelligence report covering 6 countries (2017&ndash;2021). Urban segment drives 79% of revenue. AI-powered Key Influencers visual identifies products and manufacturers driving growth.</p>
+            <p class="card-desc" data-i18n="p7.desc">Competitive intelligence report spanning 6 countries (2017–2021). The urban segment drives 79% of total revenue, with the AI-powered Key Influencers visual pinpointing the manufacturers behind the strongest growth.</p>
 
             <div class="card-details" id="details-competitor">
               <div class="detail-block">
@@ -222,7 +221,7 @@
               <div class="kpi"><span class="kpi-val">27.5%</span><span class="kpi-label" data-i18n="kpi.margin">Profit Margin</span></div>
               <div class="kpi"><span class="kpi-val">$118K</span><span class="kpi-label" data-i18n="kpi.saved">Shipping Saved</span></div>
             </div>
-            <p class="card-desc" data-i18n="p8.desc">End-to-end e-commerce BI report for a US pet supplies store. Covers sales profitability, customer geography, product performance, shipping what-if simulation and market basket analysis.</p>
+            <p class="card-desc" data-i18n="p8.desc">Power BI report for a US pet supplies store analysing sales profitability, shipping cost optimisation via what-if simulation, and product co-purchase patterns through market basket analysis.</p>
 
             <div class="card-details" id="details-ecommerce">
               <div class="detail-block">
@@ -276,6 +275,103 @@
           </div>
         </article>
 
+        <!-- Project 3 — Chest X-Ray Classification -->
+        <article class="project-card reveal project-card--featured" data-category="python">
+          <div class="card-media">
+            <div class="card-slideshow" data-slides="3">
+              <img src="assets/xray_p1.png" alt="Chest X-Ray Samples" class="slide active" loading="lazy" />
+              <img src="assets/xray_p2.jpg" alt="Model Training Curves" class="slide" loading="lazy" />
+              <img src="assets/xray_p3.jpg" alt="Confusion Matrix Comparison" class="slide" loading="lazy" />
+              <button class="slide-prev" aria-label="Previous">&#8249;</button>
+              <button class="slide-next" aria-label="Next">&#8250;</button>
+              <div class="slide-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <span class="card-badge">Deep Learning</span>
+            <div class="card-overlay">
+              <button class="card-btn" data-modal="xray">View Report</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Python &middot; TensorFlow/Keras &middot; CNN &middot; Medical AI</span>
+            <h3 class="card-title">Chest X-Ray Classification &mdash; CNN vs MobileNetV2 vs EfficientNet</h3>
+            <div class="card-kpis">
+              <div class="kpi"><span class="kpi-val">77–78%</span><span class="kpi-label">Best Accuracy</span></div>
+              <div class="kpi"><span class="kpi-val">0.94</span><span class="kpi-label">Best AUC</span></div>
+              <div class="kpi"><span class="kpi-val">25,553</span><span class="kpi-label">X-Ray Images</span></div>
+            </div>
+            <p class="card-desc">Comparative analysis of three deep learning models for chest X-ray classification (Normal, Pneumonia, Tuberculosis). The project prioritises clinical safety by maximising recall and minimising false negatives.</p>
+
+            <div class="card-details" id="details-xray">
+              <div class="detail-block">
+                <h5>Project Goal</h5>
+                <p>Design and evaluate three deep learning architectures — a custom CNN, MobileNetV2 and EfficientNet. The primary objective was not only high statistical accuracy, but clinical usefulness: reducing the risk of misclassifying pathological cases as healthy (false negatives).</p>
+              </div>
+              <div class="detail-block">
+                <h5>Research Questions</h5>
+                <ul>
+                  <li>Can deep learning effectively classify chest X-ray images?</li>
+                  <li>Does increasing architectural complexity improve classification performance?</li>
+                  <li>Can confusion matrix analysis reveal systematic model errors?</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h5>Dataset</h5>
+                <ul>
+                  <li>25,553 X-ray images split into Train / Validation / Test</li>
+                  <li>Classes: Normal, Pneumonia, Tuberculosis</li>
+                  <li>Preprocessing: normalisation and contrast standardisation</li>
+                  <li>Balanced validation and test splits</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h5>Model Comparison</h5>
+                <ul>
+                  <li><strong>Custom CNN:</strong> 74.39% accuracy &middot; AUC 0.928</li>
+                  <li><strong>MobileNetV2:</strong> 76.33% accuracy &middot; AUC 0.927</li>
+                  <li><strong>EfficientNet:</strong> 77–78% accuracy &middot; AUC 0.94</li>
+                  <li>Full evaluation: Precision, Recall, F1-score, AUC</li>
+                  <li>Confusion matrices &amp; classification reports analysed</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h5>Key Insights</h5>
+                <ul>
+                  <li>EfficientNet achieved the highest overall performance</li>
+                  <li>Prioritising recall improved clinical safety</li>
+                  <li>Normalisation reduced prediction variance across images</li>
+                  <li>Confusion matrix analysis revealed typical misclassification patterns</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h5>Skills Demonstrated</h5>
+                <div class="detail-tags">
+                  <span>Deep Learning</span><span>TensorFlow / Keras</span><span>CNN Architecture Design</span>
+                  <span>Transfer Learning</span><span>MobileNetV2</span><span>EfficientNet</span>
+                  <span>Model Evaluation</span><span>Confusion Matrix Analysis</span><span>Medical Image Classification</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="card-expand-btn" data-target="details-xray">
+              <span class="expand-label" data-i18n="card.showDetails">Show details</span>
+              <span class="expand-icon">+</span>
+            </button>
+
+            <div class="card-pages">
+              <span class="card-page-chip">Data Exploration</span>
+              <span class="card-page-chip">Model Training</span>
+              <span class="card-page-chip">Evaluation &amp; Insights</span>
+            </div>
+            <div class="card-meta">
+              <span>Python</span><span>TensorFlow</span><span>Keras</span><span>Transfer Learning</span><span>Medical AI</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -294,7 +390,14 @@
           <div class="course-body">
             <span class="course-provider">DataCamp</span>
             <h4 class="course-title">Introduction to DAX in Power BI</h4>
-            <p class="course-desc"> I completed a comprehensive DAX course focused on building strong fundamentals in Power BI. Throughout the course, I worked with DAX functions to create calculated columns, measures, and calculated tables, while developing a clear understanding of row context vs. filter context. I also practiced using VAR variables, iterator functions, and CALCULATE() to create dynamic and optimized measures. Additionally, I explored Date & Time and Time Intelligence functions and learned how to leverage Quick Measures to build more advanced DAX solutions efficiently. make the end in simplier language</p>
+            <p class="course-desc course-summary">Fundamentals of DAX for building calculated columns, measures and tables with a focus on row vs. filter context and time intelligence.</p>
+            <div class="course-detail-body" id="course-detail-1">
+              <p>Covered DAX functions for calculated columns, measures and calculated tables, with a clear understanding of row context vs. filter context. Practiced VAR variables, iterator functions and CALCULATE() for dynamic, optimised measures. Also explored Date &amp; Time and Time Intelligence functions, and used Quick Measures to build more advanced solutions efficiently.</p>
+            </div>
+            <button class="course-expand-btn" data-target="course-detail-1">
+              <span class="course-expand-label">Show more</span>
+              <span class="expand-icon">+</span>
+            </button>
             <div class="course-tags"><span>Power BI</span><span>DAX</span><span>Data Manipulation</span></div>
           </div>
           <span class="course-badge course-badge--done">Completed</span>
@@ -305,13 +408,14 @@
           <div class="course-body">
             <span class="course-provider">DataCamp</span>
             <h4 class="course-title">Introduction to Excel</h4>
-            <p class="course-desc">I completed a detailed Excel course that taught me how to handle and analyze data efficiently.
-
-During the course, I learned how to navigate Excel, add and organize data in workbooks, create basic formulas, and work with tables using structured references. I also practiced sorting, filtering, and formatting data to improve clarity and usability.
-
-I gained experience managing data with named ranges, custom number formats, and data validation, as well as applying aggregate functions like SUM, COUNT, and AVERAGE, and summarizing data with subtotals, totals, and conditional formatting.
-
-Lastly, I explored various Excel functions, including Text, Date & Time, and Math & Trig, and learned how to create visualizations to effectively display categories, proportions, and trends.</p>
+            <p class="course-desc course-summary">Core Excel skills: data organisation, formulas, tables, sorting, filtering, aggregate functions and chart creation.</p>
+            <div class="course-detail-body" id="course-detail-2">
+              <p>Learned to navigate Excel, manage workbooks and create basic formulas. Worked with tables using structured references and practiced sorting, filtering and formatting for clarity. Gained experience with named ranges, custom number formats and data validation, as well as aggregate functions (SUM, COUNT, AVERAGE) and conditional formatting. Explored Text, Date &amp; Time, and Math &amp; Trig functions and built visualisations to display categories, proportions and trends.</p>
+            </div>
+            <button class="course-expand-btn" data-target="course-detail-2">
+              <span class="course-expand-label">Show more</span>
+              <span class="expand-icon">+</span>
+            </button>
             <div class="course-tags"><span>Excel</span><span>Data Manipulation</span><span>Visualization</span></div>
           </div>
           <span class="course-badge course-badge--done">Completed</span>
@@ -322,11 +426,14 @@ Lastly, I explored various Excel functions, including Text, Date & Time, and Mat
           <div class="course-body">
             <span class="course-provider">DataCamp</span>
             <h4 class="course-title">Reports in Power BI</h4>
-            <p class="course-desc">I completed a Power BI course focused on creating interactive and insightful reports.
-
-In the course, I learned the differences between reports, dashboards, and paginated reports, and how to increase report interactivity. I practiced using bookmarks and buttons to improve navigation and explored customizing buttons and advanced tooltips.
-
-Additionally, I learned how to customize Q&A visuals and create advanced visuals like Decomposition Trees and Key Influencers to better analyze and present data.</p>
+            <p class="course-desc course-summary">Building interactive Power BI reports with bookmarks, buttons, advanced tooltips, Q&amp;A visuals and AI-powered Decomposition Trees.</p>
+            <div class="course-detail-body" id="course-detail-3">
+              <p>Learned the differences between reports, dashboards and paginated reports, and how to increase report interactivity. Practiced using bookmarks and buttons to improve navigation and explored customising buttons with advanced tooltips. Also learned to customise Q&amp;A visuals and create advanced visuals like Decomposition Trees and Key Influencers to better analyse and present data.</p>
+            </div>
+            <button class="course-expand-btn" data-target="course-detail-3">
+              <span class="course-expand-label">Show more</span>
+              <span class="expand-icon">+</span>
+            </button>
             <div class="course-tags"><span>Power BI</span><span>Data Visualization</span><span>Reports</span></div>
           </div>
           <span class="course-badge course-badge--done">Completed</span>
@@ -336,9 +443,16 @@ Additionally, I learned how to customize Q&A visuals and create advanced visuals
           <div class="course-icon">&#127891;</div>
           <div class="course-body">
             <span class="course-provider">DataCamp</span>
-            <h4 class="course-title">Introduction to R</h4>
-            <p class="course-desc">Fundamentals of R for data analysis, visualization with ggplot2 and statistical computing.</p>
-            <div class="course-tags"><span>R</span><span>ggplot2</span><span>tidyverse</span></div>
+            <h4 class="course-title">Intermediate DAX in Power BI</h4>
+            <p class="course-desc course-summary">Advanced DAX techniques: logical functions, table manipulation, row-level security and time intelligence for multi-period analysis.</p>
+            <div class="course-detail-body" id="course-detail-4">
+              <p>Used logical functions like IF() and SWITCH() for dynamic calculations, and table manipulation functions such as ADDCOLUMNS() and SUMMARIZE() to organise and aggregate data. Implemented row-level security using USERPRINCIPALNAME() to control data access. Practiced time intelligence functions including SAMEPERIODLASTYEAR() and TOTALYTD() for effective cross-period analysis.</p>
+            </div>
+            <button class="course-expand-btn" data-target="course-detail-4">
+              <span class="course-expand-label">Show more</span>
+              <span class="expand-icon">+</span>
+            </button>
+            <div class="course-tags"><span>Power BI</span><span>DAX</span><span>Functions</span></div>
           </div>
           <span class="course-badge course-badge--done">Completed</span>
         </div>
@@ -347,8 +461,7 @@ Additionally, I learned how to customize Q&A visuals and create advanced visuals
     </div>
   </section>
 
-  <!-- CONTACT — links only, no form -->
-
+  <!-- CONTACT -->
   <section class="contact section" id="contact">
     <div class="container">
       <div class="section-header">
@@ -358,38 +471,37 @@ Additionally, I learned how to customize Q&A visuals and create advanced visuals
       <div class="contact-inner">
         <div class="contact-simple reveal">
           <p class="contact-lead">
-            <span data-i18n="contact.lead1">Have a project in mind?</span><br>
-            <em data-i18n="contact.lead2">Let's talk.</em>
+            <span data-i18n="contact.lead1">Open to opportunities.</span><br>
+            <em data-i18n="contact.lead2">Let's connect.</em>
           </p>
           <div class="contact-links">
-            <a  class="contact-link">
-              <span class="cl-icon">&#9993;</span><span class="__cf_email__" data-cfemail="3d55585151527d4452484f535c5058135e5250">malwinasawczuk@gmail.com</span>
+            <a href="mailto:malwinasawczuk@gmail.com" class="contact-link">
+              <span class="cl-icon">&#9993;</span>malwinasawczuk@gmail.com
             </a>
             <a href="https://www.linkedin.com/in/malwina-sawczuk" target="_blank" class="contact-link" rel="noopener">
-              <span class="cl-icon">in</span>LinkedIn
+              <span class="cl-icon">in</span>linkedin.com/in/malwina-sawczuk
             </a>
           </div>
         </div>
-        <div class="contact-form-wrap reveal">
-          <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
-            <div class="cf-field">
-              <label class="cf-label" for="cfName" data-i18n="contact.name">Name</label>
-              <input class="cf-input" type="text" id="cfName" placeholder="Your name" required />
+        <div class="contact-info-col reveal">
+          <div class="contact-info-card">
+            <div class="cic-row">
+              <span class="cic-label">Status</span>
+              <span class="cic-value"><span class="status-dot"></span>Available for internships &amp; junior roles</span>
             </div>
-            <div class="cf-field">
-              <label class="cf-label" for="cfEmail" data-i18n="contact.email">Email</label>
-              <input class="cf-input" type="email" id="cfEmail" placeholder="youremail@email.com" required />
+            <div class="cic-row">
+              <span class="cic-label">Focus</span>
+              <span class="cic-value">Data Analysis · Business Intelligence · Reporting</span>
             </div>
-            <div class="cf-field">
-              <label class="cf-label" for="cfMessage" data-i18n="contact.message">Message</label>
-              <textarea class="cf-input cf-textarea" id="cfMessage" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <div class="cic-row">
+              <span class="cic-label">Tools</span>
+              <span class="cic-value">Power BI · SQL · Python · Excel</span>
             </div>
-            <button type="submit" class="cf-submit">
-              <span data-i18n="contact.send">Send Message</span>
-              <span class="cf-arrow">&#8594;</span>
-            </button>
-            <p class="cf-success" id="cfSuccess" data-i18n="contact.success">Message sent! I'll be in touch soon.</p>
-          </form>
+            <div class="cic-row">
+              <span class="cic-label">Location</span>
+              <span class="cic-value">Poland · Open to remote</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

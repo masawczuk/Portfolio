@@ -4,27 +4,23 @@
    TRANSLATIONS
    =========================== */
 const translations = {
-    'meta.title':        'Portfolio — Data & Development',
+    'meta.title':        'Portfolio — Junior Data Analyst',
     'nav.about':         'About',
     'nav.projects':      'Projects',
     'nav.courses':       'Courses',
     'nav.contact':       'Contact',
-    'hero.eyebrow':      'Data Analyst · Developer',
+    'hero.eyebrow':      'Junior Data Analyst',
     'hero.title1':       'Turning raw data',
     'hero.title2':       'into clarity',
     'hero.desc':         'I build dashboards, reports, and digital experiences that make complex information feel effortless.',
     'hero.cta':          'View Work',
     'hero.scroll':       'Scroll',
     'about.photoHint':   'Add your photo to assets/photo.jpg',
-    'about.lead':        "I'm a data professional who bridges the gap between raw numbers and meaningful stories.",
-    'about.body':        'With expertise spanning Power BI, web development, and data engineering, I craft solutions that are as beautiful as they are functional.',
+    'about.lead':        "I'm a Data Engineering and Analysis student with hands-on experience working with large datasets.",
+    'about.body':        'I have strong analytical skills and a solid command of data visualization tools. Outside of coursework, I competed at the HACKNATION hackathon and regularly attend conferences like KAIAK and GHOST.',
     'about.skills.analytics':   'Analytics',
     'about.skills.development': 'Development',
-    'about.skills.tools':       'Tools',
-    'filter.all':        'All',
     'card.viewReport':   'View Report',
-    'card.visitSite':    'Visit Site',
-    'card.viewDashboard':'View Dashboard',
     'card.showDetails':  'Show details',
     'card.hideDetails':  'Hide details',
     'kpi.revenue':       'Total Revenue',
@@ -37,21 +33,9 @@ const translations = {
     'detail.dax':        'DAX Measures',
     'detail.insights':   'Key Insights',
     'detail.skills':     'Skills Demonstrated',
-    'p1.title': 'Sales Performance Dashboard',
-    'p1.desc':  'Interactive report tracking KPIs across regions with drill-through capabilities and custom DAX measures.',
-    'p2.title': 'E-Commerce Analytics Portal',
-    'p2.desc':  'Full-stack web application with real-time analytics, built with React and Python backend.',
-    'p3.title': 'Predictive Sales Forecasting',
-    'p3.desc':  'Machine learning model using time-series analysis to forecast quarterly revenue with 94% accuracy.',
-    'p4.title': 'Operations KPI Monitor',
-    'p4.desc':  'Real-time operational dashboard with automated alerting and executive summary reports.',
-    'p5.title': 'Customer Segmentation Report',
-    'p5.desc':  'Advanced RFM analysis with customer lifetime value prediction and segment-based targeting insights.',
-    'p6.title': 'Data Visualization Library',
-    'p6.desc':  'Open-source collection of reusable chart components built with D3.js and React.',
     'p7.tag':   'Power BI · 2 Pages · DataCamp',
     'p7.title': 'Competitor Sales & Market Share Analysis',
-    'p7.desc':  'Competitive intelligence report covering 6 countries (2017–2021). Urban segment drives 79% of revenue. AI-powered Key Influencers visual identifies products and manufacturers driving growth.',
+    'p7.desc':  'Competitive intelligence report spanning 6 countries (2017–2021). The urban segment drives 79% of total revenue, with the AI-powered Key Influencers visual pinpointing the manufacturers behind the strongest growth.',
     'p7.overview': 'Built on DataCamp CSV & Excel datasets. Power Query used to clean multi-year sales data, standardise country/category fields and build a scalable star-schema model across revenue, product, segment and time dimensions.',
     'p7.dax1': 'Total Revenue & PY Sales',
     'p7.dax2': '% YoY Growth',
@@ -66,9 +50,9 @@ const translations = {
     'p7.ins5': 'AI Key Influencers: Artisans manufacturer drove the largest single revenue increase',
     'p7.page1': 'Competitor Sales Analysis',
     'p7.page2': 'Advanced Insights',
-    'p8.tag':   'Power BI · 7 Pages · DataCamp',
+    'p8.tag':   'Power BI · 3 Pages · DataCamp',
     'p8.title': 'E-Commerce Sales & Shipping Optimization',
-    'p8.desc':  'End-to-end e-commerce BI report for a US pet supplies store. Covers sales profitability, customer geography, product performance, shipping what-if simulation and market basket analysis.',
+    'p8.desc':  'Power BI report for a US pet supplies store analysing sales profitability, shipping cost optimisation via what-if simulation, and product co-purchase patterns through market basket analysis.',
     'p8.overview': 'DataCamp case study using CSV, XLSX and folder data sources. Power Query built a star-schema model joining sales, products, shipping and customer tables. Dynamic filtering across categories, regions, states and products.',
     'p8.dax1': 'Total Sales, Total Profit & Profit %',
     'p8.dax2': 'Shipping Cost — Baseline vs What-if scenario',
@@ -81,32 +65,13 @@ const translations = {
     'p8.ins4': 'Shipping what-if: baseline $385K optimised to $267K — $118K saved',
     'p8.ins5': 'Market basket: Dog & Puppy Pads + Earth Rated Bags are top co-purchase pair',
     'p8.page1': 'Executive Summary',
-    'p8.page2': 'Customer Info',
-    'p8.page3': 'Product Info',
     'p8.page4': 'Shipping Metrics',
     'p8.page5': 'Market Basket',
-    'p8.page6': '+2 more',
-    'sites.intro':          'Explore these projects directly in the browser — click to interact with each one.',
-    'sites.open':           '↗ Open',
-    'sites.loadBtn':        'Load Power BI Preview',
-    'sites.loadPreview':    'Load Preview',
-    'sites.competitorDesc': 'Revenue gauge · Waterfall by year & segment · Country column chart · Decomposition tree · Key drivers AI visual',
-    'sites.ecommerceDesc':  'Executive Summary · Customer geography (Azure Maps) · Product performance · Shipping metrics · Market basket analysis',
-    'site3.title':         'Web Application',
-    'site3.previewTitle':  'Web Application Preview',
-    'site3.previewDesc':   'Replace the data-src attribute with your site URL',
-    'contact.lead1':       'Have a project in mind?',
-    'contact.lead2':       "Let's talk.",
-    'contact.name':        'Name',
-    'contact.namePlaceholder': 'Your name',
-    'contact.email':       'Email',
-    'contact.message':     'Message',
-    'contact.messagePlaceholder': 'Tell me about your project...',
-    'contact.send':        'Send Message',
-    'contact.success':     "Message sent! I'll be in touch soon.",
-    'footer.tagline':      'Designed & built with care',
-    'modal.download':      'Download',
-    'modal.loading':       'Loading report…',
+    'contact.lead1':  'Open to opportunities.',
+    'contact.lead2':  "Let's connect.",
+    'footer.tagline': 'Designed & built with care',
+    'modal.download': 'Download',
+    'modal.loading':  'Loading report…',
 };
 
 /* ===========================
@@ -221,30 +186,11 @@ const revealObserver = new IntersectionObserver(entries => {
 reveals.forEach(el => revealObserver.observe(el));
 
 /* ===========================
-   PROJECT FILTER (disabled — only Power BI projects remain)
-   =========================== */
-// filter bar removed
-
-/* ===========================
-   CONTACT FORM (disabled — form removed)
-   =========================== */
-// contact form removed
-
-/* ===========================
    ACTIVE NAV HIGHLIGHT
    =========================== */
 const sections = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.nav-links a');
-new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const id = entry.target.getAttribute('id');
-      navLinks.forEach(link => {
-        link.style.color = link.getAttribute('href') === '#' + id ? 'var(--ink)' : '';
-      });
-    }
-  });
-}, { threshold: 0.4 }).observe ? sections.forEach(s => {
+sections.forEach(s => {
   new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -253,7 +199,7 @@ new IntersectionObserver(entries => {
       }
     });
   }, { threshold: 0.4 }).observe(s);
-}) : null;
+});
 
 /* ===========================
    HERO PARALLAX
@@ -263,18 +209,6 @@ if (heroBg) {
   window.addEventListener('scroll', () => {
     heroBg.style.transform = `translateY(calc(-50% + ${window.scrollY * 0.3}px))`;
   }, { passive: true });
-}
-
-/* ===========================
-   CONTACT FORM
-   =========================== */
-function handleContactSubmit(e) {
-  e.preventDefault();
-  const success = document.getElementById('cfSuccess');
-  if (success) {
-    success.classList.add('visible');
-    e.target.querySelector('.cf-submit').disabled = true;
-  }
 }
 
 /* ===========================
@@ -293,18 +227,34 @@ document.querySelectorAll('.card-expand-btn').forEach(btn => {
 });
 
 /* ===========================
+   COURSE DETAIL EXPAND
+   =========================== */
+document.querySelectorAll('.course-expand-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const panel = document.getElementById(btn.dataset.target);
+    if (!panel) return;
+    const isOpen = panel.classList.contains('open');
+    panel.classList.toggle('open', !isOpen);
+    btn.classList.toggle('open', !isOpen);
+    btn.querySelector('.course-expand-label').textContent = isOpen ? 'Show more' : 'Show less';
+  });
+});
+
+/* ===========================
    REPORT MODAL
    =========================== */
 const reports = {
-  competitor: { src: 'assets/competitor_sales_analysis.pdf', title: 'Competitor Sales Analysis', pages: '5 pages' },
-  ecommerce:  { src: 'assets/eccomerce_analysis.pdf',        title: 'E-Commerce Analysis',        pages: '7 pages' },
+  competitor: { src: 'assets/competitor_sales_analysis.pdf', title: 'Competitor Sales Analysis', pages: '2 pages' },
+  ecommerce:  { src: 'assets/eccomerce_analysis.pdf',        title: 'E-Commerce Analysis',        pages: '3 pages' },
+  xray:       { src: 'assets/xray_classification_report.pdf', title: 'Chest X-Ray Classification', pages: '3 pages' },
 };
 
-const modal        = document.getElementById('reportModal');
+const modal         = document.getElementById('reportModal');
 const modalBackdrop = document.getElementById('modalBackdrop');
-const modalClose   = document.getElementById('modalClose');
-const reportEmbed  = document.getElementById('reportEmbed');
-const modalUrl     = document.getElementById('modalUrl');
+const modalClose    = document.getElementById('modalClose');
+const reportEmbed   = document.getElementById('reportEmbed');
+const modalUrl      = document.getElementById('modalUrl');
 const modalPageInfo = document.getElementById('modalPageInfo');
 const modalDownload = document.getElementById('modalDownload');
 const modalLoading  = document.getElementById('modalLoading');
@@ -362,7 +312,3 @@ document.querySelectorAll('.card-slideshow').forEach(show => {
   next && next.addEventListener('click', e => { e.stopPropagation(); goTo(current + 1); });
   dots.forEach((dot, i) => dot.addEventListener('click', e => { e.stopPropagation(); goTo(i); }));
 });
-
-/* ===========================
-   SITES / LOAD IFRAME (removed)
-   =========================== */
