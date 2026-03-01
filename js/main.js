@@ -4,7 +4,6 @@
    TRANSLATIONS
    =========================== */
 const translations = {
-  en: {
     'meta.title':        'Portfolio — Data & Development',
     'nav.about':         'About',
     'nav.projects':      'Projects',
@@ -108,181 +107,31 @@ const translations = {
     'footer.tagline':      'Designed & built with care',
     'modal.download':      'Download',
     'modal.loading':       'Loading report…',
-  },
-
-  pl: {
-    'meta.title':        'Portfolio — Dane & Programowanie',
-    'nav.about':         'O mnie',
-    'nav.projects':      'Projekty',
-    'nav.courses':       'Kursy',
-    'nav.contact':       'Kontakt',
-    'hero.eyebrow':      'Analityk Danych · Programista',
-    'hero.title1':       'Przekształcam surowe dane',
-    'hero.title2':       'w jasne wnioski',
-    'hero.desc':         'Tworzę dashboardy, raporty i aplikacje cyfrowe, które sprawiają, że skomplikowane informacje stają się proste.',
-    'hero.cta':          'Zobacz projekty',
-    'hero.scroll':       'Przewiń',
-    'about.photoHint':   'Dodaj swoje zdjęcie do assets/photo.jpg',
-    'about.lead':        'Jestem specjalistą ds. danych, który łączy surowe liczby z sensownymi historiami.',
-    'about.body':        'Łącząc wiedzę z Power BI, tworzenia stron internetowych i inżynierii danych, buduję rozwiązania równie estetyczne, co funkcjonalne.',
-    'about.skills.analytics':   'Analityka',
-    'about.skills.development': 'Programowanie',
-    'about.skills.tools':       'Narzędzia',
-    'filter.all':        'Wszystkie',
-    'card.viewReport':   'Zobacz raport',
-    'card.visitSite':    'Odwiedź stronę',
-    'card.viewDashboard':'Zobacz dashboard',
-    'card.showDetails':  'Pokaż szczegóły',
-    'card.hideDetails':  'Ukryj szczegóły',
-    'kpi.revenue':       'Przychód całkowity',
-    'kpi.yoy':           'Wzrost r/r',
-    'kpi.share':         'Udział w rynku',
-    'kpi.sales':         'Sprzedaż całkowita',
-    'kpi.margin':        'Marża zysku',
-    'kpi.saved':         'Oszczędności wysyłki',
-    'detail.overview':   'Opis projektu',
-    'detail.dax':        'Miary DAX',
-    'detail.insights':   'Kluczowe wnioski',
-    'detail.skills':     'Zastosowane umiejętności',
-    'p1.title': 'Dashboard wydajności sprzedaży',
-    'p1.desc':  'Interaktywny raport śledzący KPI w różnych regionach z funkcją drążenia i niestandardowymi miarami DAX.',
-    'p2.title': 'Portal analityczny e-commerce',
-    'p2.desc':  'Aplikacja full-stack z analityką w czasie rzeczywistym, zbudowana na React i backendzie Python.',
-    'p3.title': 'Prognozowanie sprzedaży ML',
-    'p3.desc':  'Model uczenia maszynowego wykorzystujący analizę szeregów czasowych do prognozowania przychodów kwartalnych z dokładnością 94%.',
-    'p4.title': 'Monitor KPI operacji',
-    'p4.desc':  'Operacyjny dashboard w czasie rzeczywistym z automatycznym alertowaniem i raportami dla kadry zarządzającej.',
-    'p5.title': 'Raport segmentacji klientów',
-    'p5.desc':  'Zaawansowana analiza RFM z prognozowaniem wartości życiowej klienta i targetowaniem segmentowym.',
-    'p6.title': 'Biblioteka wizualizacji danych',
-    'p6.desc':  'Otwartoźródłowa kolekcja komponentów wykresów wielokrotnego użytku zbudowana na D3.js i React.',
-    'p7.tag':   'Power BI · 2 strony · DataCamp',
-    'p7.title': 'Analiza konkurencji i udziału w rynku',
-    'p7.desc':  'Raport wywiadowczy obejmujący 6 krajów (2017–2021). Segment miejski odpowiada za 79% przychodów. Wizualizacja AI Key Influencers identyfikuje produkty i producentów napędzających wzrost.',
-    'p7.overview': 'Oparty na zbiorach danych CSV i Excel z DataCamp. Power Query użyty do czyszczenia wieloletnich danych sprzedażowych, standaryzacji pól i budowy skalowalnego modelu gwiazdy łączącego wymiary: przychody, produkt, segment i czas.',
-    'p7.dax1': 'Przychód całkowity i sprzedaż PY',
-    'p7.dax2': '% wzrostu r/r',
-    'p7.dax3': 'Udział w rynku %',
-    'p7.dax4': 'Przychody według kraju i segmentu',
-    'p7.dax5': 'Trendy wzrostu miesięcznego i kwartalnego',
-    'p7.dax6': 'Sprzedane jednostki i % udziału w przychodach',
-    'p7.ins1': 'USA dominuje z przychodem $51M; Japonia na drugim miejscu z $11M',
-    'p7.ins2': 'Segment miejski: 79,3% całkowitych przychodów',
-    'p7.ins3': 'Segment młodzieżowy: najwyższy wzrost na poziomie +86,8% r/r',
-    'p7.ins4': 'Silna ekspansja kwartalna od 2019 do 2021 roku',
-    'p7.ins5': 'AI Key Influencers: producent Artisans wywołał największy pojedynczy wzrost przychodów',
-    'p7.page1': 'Analiza konkurencji',
-    'p7.page2': 'Zaawansowane wnioski',
-    'p8.tag':   'Power BI · 7 stron · DataCamp',
-    'p8.title': 'E-Commerce: sprzedaż i optymalizacja wysyłki',
-    'p8.desc':  'Kompleksowy raport BI dla sklepu zoologicznego w USA. Obejmuje rentowność sprzedaży, geografię klientów, wydajność produktów, symulację what-if kosztów wysyłki i analizę koszyka zakupowego.',
-    'p8.overview': 'Studium przypadku DataCamp z wykorzystaniem źródeł CSV, XLSX i folderów. Power Query zbudował model gwiazdy łączący tabele: sprzedaż, produkty, wysyłka i klienci. Dynamiczne filtrowanie według kategorii, regionów, stanów i produktów.',
-    'p8.dax1': 'Sprzedaż całkowita, zysk i marża %',
-    'p8.dax2': 'Koszt wysyłki — scenariusz bazowy vs. what-if',
-    'p8.dax3': 'Sumy bieżące i porównania r/r',
-    'p8.dax4': 'Wartość życiowa klienta (LTV)',
-    'p8.dax5': '% udział w sprzedaży i metryki koszyka zakupowego',
-    'p8.ins1': 'Elektronika: najwyższa marża na poziomie 44,28%',
-    'p8.ins2': 'Najlepsze kategorie: Żywność ($536K), Materiały jednorazowe ($433K), Karma dla zwierząt',
-    'p8.ins3': 'CA, NY, FL prowadzą w wolumenie sprzedaży; ND prowadzi w LTV klienta ($1 278)',
-    'p8.ins4': 'What-if wysyłki: bazowo $385K zoptymalizowane do $267K — oszczędność $118K',
-    'p8.ins5': 'Koszyk zakupowy: Maty dla psów + Woreczki Earth Rated to najpopularniejsza para zakupowa',
-    'p8.page1': 'Podsumowanie wykonawcze',
-    'p8.page2': 'Informacje o klientach',
-    'p8.page3': 'Informacje o produktach',
-    'p8.page4': 'Metryki wysyłki',
-    'p8.page5': 'Analiza koszyka',
-    'p8.page6': '+2 więcej',
-    'sites.intro':          'Przeglądaj te projekty bezpośrednio w przeglądarce — kliknij, aby interaktywnie eksplorować.',
-    'sites.open':           '↗ Otwórz',
-    'sites.loadBtn':        'Załaduj podgląd Power BI',
-    'sites.loadPreview':    'Załaduj podgląd',
-    'sites.competitorDesc': 'Wskaźnik przychodów · Wykres wodospadowy · Wykres kolumnowy według krajów · Drzewo dekompozycji · Wizualizacja AI kluczowych czynników',
-    'sites.ecommerceDesc':  'Podsumowanie wykonawcze · Geografia klientów (Azure Maps) · Wydajność produktów · Metryki wysyłki · Analiza koszyka zakupowego',
-    'site3.title':         'Aplikacja internetowa',
-    'site3.previewTitle':  'Podgląd aplikacji internetowej',
-    'site3.previewDesc':   'Zastąp atrybut data-src adresem URL swojej strony',
-    'contact.lead1':       'Masz projekt na myśli?',
-    'contact.lead2':       'Porozmawiajmy.',
-    'contact.name':        'Imię i nazwisko',
-    'contact.namePlaceholder': 'Twoje imię',
-    'contact.email':       'E-mail',
-    'contact.message':     'Wiadomość',
-    'contact.messagePlaceholder': 'Opowiedz mi o swoim projekcie...',
-    'contact.send':        'Wyślij wiadomość',
-    'contact.success':     'Wiadomość wysłana! Odezwę się wkrótce.',
-    'footer.tagline':      'Zaprojektowane i zbudowane z pasją',
-    'modal.download':      'Pobierz',
-    'modal.loading':       'Ładowanie raportu…',
-  }
 };
 
 /* ===========================
-   i18n ENGINE
+   i18n ENGINE (English only)
    =========================== */
-let currentLang = localStorage.getItem('lang') || 'en';
-
 function t(key) {
-  return translations[currentLang][key] || translations['en'][key] || key;
+  return translations[key] || key;
 }
 
 function applyTranslations() {
-  // Fade out
-  document.body.classList.add('lang-switching');
-
-  setTimeout(() => {
-    // Text content
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      const text = t(key);
-      if (el.tagName === 'TITLE') {
-        document.title = text;
-      } else {
-        el.textContent = text;
-      }
-    });
-
-    // Placeholders
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-      el.placeholder = t(el.getAttribute('data-i18n-placeholder'));
-    });
-
-    // html lang attribute
-    document.documentElement.lang = currentLang;
-
-    // Update button
-    const flag  = document.getElementById('langFlag');
-    const label = document.getElementById('langLabel');
-    if (currentLang === 'en') {
-      flag.textContent  = '🇵🇱';
-      label.textContent = 'PL';
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const text = t(key);
+    if (el.tagName === 'TITLE') {
+      document.title = text;
     } else {
-      flag.textContent  = '🇬🇧';
-      label.textContent = 'EN';
+      el.textContent = text;
     }
-
-    // Restore expand button labels that may have been toggled
-    document.querySelectorAll('.card-expand-btn').forEach(btn => {
-      const isOpen = btn.classList.contains('open');
-      btn.querySelector('.expand-label').textContent = isOpen ? t('card.hideDetails') : t('card.showDetails');
-    });
-
-    // Fade back in
-    document.body.classList.remove('lang-switching');
-  }, 150);
-}
-
-// Toggle
-const langBtn = document.getElementById('langBtn');
-if (langBtn) {
-  langBtn.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'pl' : 'en';
-    localStorage.setItem('lang', currentLang);
-    applyTranslations();
   });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    el.placeholder = t(el.getAttribute('data-i18n-placeholder'));
+  });
+  document.documentElement.lang = 'en';
 }
 
-// Apply on load
 applyTranslations();
 
 /* ===========================

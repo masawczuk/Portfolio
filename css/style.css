@@ -1773,14 +1773,6 @@ body:has(button:hover) .cursor {
   letter-spacing: 0.15em;
 }
 
-/* Smooth language swap */
-[data-i18n] {
-  transition: opacity 0.15s ease;
-}
-
-body.lang-switching [data-i18n] {
-  opacity: 0;
-}
 
 /* ===========================
    CONTACT SIMPLE (no form)
