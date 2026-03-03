@@ -33,7 +33,7 @@ const translations = {
     'detail.dax':        'DAX Measures',
     'detail.insights':   'Key Insights',
     'detail.skills':     'Skills Demonstrated',
-    'p7.tag':   'Power BI · 2 Pages · DataCamp',
+    'p7.tag':   'Power BI · 5 Pages · DataCamp',
     'p7.title': 'Competitor Sales & Market Share Analysis',
     'p7.desc':  'Competitive intelligence report spanning 6 countries (2017–2021). The urban segment drives 79% of total revenue, with the AI-powered Key Influencers visual pinpointing the manufacturers behind the strongest growth.',
     'p7.overview': 'Built on DataCamp CSV & Excel datasets. Power Query used to clean multi-year sales data, standardise country/category fields and build a scalable star-schema model across revenue, product, segment and time dimensions.',
